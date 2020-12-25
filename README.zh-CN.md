@@ -36,6 +36,25 @@ Vue.use(IconFontOnline, {
 })
 ```
 
+如果要加载多个图标库 
+
+```js
+import IconFontOnline from 'vue-iconfont-online';
+Vue.use(IconFontOnline, [{
+    url: '//at.alicdn.com/t/font_2292720_gpwudclzhf6.css',
+    symbol: 'alibaba-',
+    fontFamily: 'alibaba-icon',
+    fontSize: 22
+  },
+  {
+    url: '//at.alicdn.com/t/font_1151961_6sy5eu8oe36.css',
+    symbol: 'shn-',
+    fontFamily: 'shni',
+    fontSize: 22
+  }
+])
+```
+
 HTML
 ```html
 <i class="alibaba-seleted"></i>
@@ -49,3 +68,40 @@ HTML
 | symbol  | 阿里巴巴iconfont项目设置的FontClass/Symbol 前缀 | String | alibaba- |
 | fontFamily  | 阿里巴巴iconfont项目设置的 Font Family | String | alibaba-icon |
 | fontSize  | 图标默认大小 | Number | 16 |
+
+<br>
+<br>
+
+## iconfont 图标库如何生成在线链接
+
+[阿里巴巴矢量图标库](https://www.iconfont.cn/)
+
+1.选择想要添加的图标
+
+2.单击右上角购物车图标
+
+<div>
+<img src="https://cdn.chenyingshuang.cn/blog/vue/vue-iconfont-online/step1.png">
+</div>
+
+3.添加至项目
+
+4.选择一个项目或新增一个项目
+
+<div>
+<img src="https://cdn.chenyingshuang.cn/blog/vue/vue-iconfont-online/step3.png">
+</div>
+
+5.生成代码，此时就获得了图标库的在线链接
+
+<div>
+<img src="https://cdn.chenyingshuang.cn/blog/vue/vue-iconfont-online/step5.png">
+</div>
+<div>
+<img src="https://cdn.chenyingshuang.cn/blog/vue/vue-iconfont-online/step6.png">
+</div>
+
+6.在“更多操作 -> 编辑项目”中，可以设置图标库的Font Family及FontClass/Symbol 前缀
+<div>
+<img src="https://cdn.chenyingshuang.cn/blog/vue/vue-iconfont-online/step7.png">
+</div>

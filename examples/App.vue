@@ -4,6 +4,8 @@
     <i class="alibaba-share"></i>
     <i class="alibaba-searchcart"></i>
     <i class="alibaba-sorting"></i>
+    <i class="shn-IE-circle-fill"></i>
+    <i class="shn-taobao-circle-fill"></i>
   </div>
 </template>
 <script>
