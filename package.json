@@ -1,0 +1,34 @@
+{
+  "name": "vue-iconfont-online",
+  "version": "1.0.0",
+  "description": "A Component Library for Vue.js.",
+  "main": "lib/vue-iconfont-online.umd.min.js",
+  "private": false,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "lib": "vue-cli-service build --target lib --name vue-iconfont-online --dest lib src/index.js"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.5.0",
+    "@vue/cli-service": "^3.5.0",
+    "babel-polyfill": "^6.26.0",
+    "vue-template-compiler": "^2.5.21"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShnHz/vue-iconfont-online.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ShnHz/vue-iconfont-online/issues"
+  },
+  "homepage": "https://github.com/ShnHz/vue-iconfont-online#readme",
+  "author": "shn0620",
+  "dependencies": {
+    "sass-loader": "^8.0.2",
+    "vue": "^2.6.11",
+    "vue-touch-box": "^1.0.0"
+  }
+}
