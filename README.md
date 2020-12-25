@@ -1,16 +1,13 @@
-# vue-touch-box
+# vue-iconfont-online
 
 [![Vue 2.x](https://img.shields.io/badge/Vue-2.x-brightgreen.svg)](https://vuejs.org/v2/guide/)
-[![npm](https://img.shields.io/npm/v/vue-touch-box.svg)](https://www.npmjs.com/package/vue-touch-box)
-[![npm-downloads](https://img.shields.io/npm/dm/vue-touch-box.svg)](https://www.npmjs.com/package/vue-touch-box)
-[![Github](https://img.shields.io/github/stars/ShnHz/vue-touch-box.svg?style=social&label=Star&maxAge=2592000)](https://github.com/ShnHz/vue-touch-box)
+[![npm](https://img.shields.io/npm/v/vue-iconfont-online.svg)](https://www.npmjs.com/package/vue-iconfont-online)
+[![npm-downloads](https://img.shields.io/npm/dm/vue-iconfont-online.svg)](https://www.npmjs.com/package/vue-iconfont-online)
+[![Github](https://img.shields.io/github/stars/ShnHz/vue-iconfont-online.svg?style=social&label=Star&maxAge=2592000)](https://github.com/ShnHz/vue-iconfont-online)
 
-[DEMO](https://www.sanghangning.cn/blog/vue/VueTouchBox.html)
+[中文文档](./README.zh-CN.md) | [DEMO](https://www.sanghangning.cn/blog/vue/vueIconFontOnline.html)
 
-[中文文档](./README.zh-CN.md)
-
-
-PC touch to elements was never this easy!
+Makes it easier to reference The Alibaba Iconfont icon library!
 
 This is for `vue 2.x`
 
@@ -20,38 +17,38 @@ This package is available on npm.
 
 Using npm:
 ```bash
-npm install --save vue-touch-box
+npm install --save vue-iconfont-online
 ```
 
 Using yarn:
 ```bash
-yarn add vue-touch-box
+yarn add vue-iconfont-online
 ```
 
 ## Usage
 
-vue-touch-box can be used as a vue directive.
-
 ### As a vue directive
 JS
 ```js
-import VueTouchBox from 'vue-touch-box';
-
-Vue.use(VueTouchBox)
+import IconFontOnline from 'vue-iconfont-online';
+Vue.use(IconFontOnline, {
+  url: '//at.alicdn.com/t/font_2292720_gpwudclzhf6.css',
+  symbol: 'alibaba-',
+  fontFamily: 'alibaba-icon',
+  fontSize: 22
+})
 ```
 
 HTML
 ```html
-<div v-touch-box>
-    touch this
-</div>
+<i class="alibaba-seleted"></i>
 ```
 
 ## Options
 
-|  Attribute  | Description | Default |
-|  :----  | :----  | :----: |
-| speed  | scrolling speed. | 1 |
-| mobile  | open the mobile. | false |
-| inertia  | open the scroll inertia. | true |
-| rebound  | scroll rebound,if horizontal scrolling then fail.| true |
+|  Attribute  | Description | Type | Default |
+|  :----  | :---- | :----: | :----: |
+| url  | Alibaba iconfont online link. | String | //at.alicdn.com/t/font_2292720_gpwudclzhf6.css |
+| symbol  | Alibaba iconfont FontClass/Prefix Symbol. | String | alibaba- |
+| fontFamily  | Alibaba iconfont FontFamily. | String | alibaba-icon |
+| fontSize  | icon default size. | Number | 16 |
