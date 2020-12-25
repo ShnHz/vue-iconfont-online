@@ -1,6 +1,6 @@
 {
   "name": "vue-iconfont-online",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A Component Library for Vue.js.",
   "main": "lib/vue-iconfont-online.umd.min.js",
   "private": false,
@@ -29,6 +29,6 @@
   "dependencies": {
     "sass-loader": "^8.0.2",
     "vue": "^2.6.11",
-    "vue-iconfont-online": "^1.0.1"
+    "vue-iconfont-online": "^1.0.2"
   }
 }
